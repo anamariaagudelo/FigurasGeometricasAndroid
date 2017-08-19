@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.edu.udea.figurasgeometricas.MainActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="0.85"
+           android:orientation="horizontal">
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1.01"
+               android:weightSum="1">
+               <RadioGroup
+                   android:layout_width="match_parent"
+                   android:layout_height="370dp">
+                   <RadioButton
+                       android:id="@+id/rCuadrado"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="@string/cuadrado"
+                       android:layout_marginTop="40sp"/>
+                   <RadioButton
+                       android:id="@+id/rCirculo"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="@string/circulo"
+                       android:layout_marginTop="40sp"  />
+                   <RadioButton
+                       android:id="@+id/rTriangulo"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="@string/triangulo"
+                       android:layout_marginTop="40sp"/>
+                   <RadioButton
+                       android:id="@+id/rCubo"
+                       android:layout_width="match_parent"
+                       android:layout_height="40dp"
+                       android:text="@string/cubo"
+                       android:layout_marginTop="45sp"/>
+               </RadioGroup>
+
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:orientation="vertical"
+                   android:layout_marginTop="10dp">
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="0dp"
+                       android:layout_weight="1">
+                       <EditText
+                           android:id="@+id/eCuadro"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:hint="@string/ladoCuadrado"
+                           android:inputType="number"
+                           android:layout_marginTop="20dp"/>
+
+                   </LinearLayout>
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="0dp"
+                       android:layout_weight="1">
+
+                       <EditText
+                           android:id="@+id/eCirculo"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:hint="@string/ladoCirculo"
+                           android:inputType="number"
+                           android:layout_marginTop="20dp"/>
+                   </LinearLayout>
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="0dp"
+                       android:layout_weight="1">
+
+                       <EditText
+                           android:id="@+id/eTriangulo"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:hint="@string/ladoTriangulo"
+                           android:inputType="number"
+                           android:layout_marginTop="20dp"/>
+                   </LinearLayout>
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="0dp"
+                       android:layout_weight="1">
+                       <EditText
+                           android:id="@+id/eCubo"
+                           android:layout_width="match_parent"
+                           android:layout_height="63dp"
+                           android:hint="@string/ladoCubo"
+                           android:inputType="number"
+                          />
+                   </LinearLayout>
+
+
+               </LinearLayout>
+
+
+</LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="0.32"
+                   android:orientation="vertical">
+
+                   <LinearLayout
+
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_marginTop="10dp"
+                       android:layout_weight="0.5">
+
+                       <Button
+                           android:id="@+id/bCalcular"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="bottom"
+                           android:background="@color/colorPrimary"
+                           android:onClick="Calcular"
+                           android:text="@string/calcular" />
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_weight="0.3"
+                       android:layout_marginTop="10dp">
+                       <TextView
+                           android:id="@+id/tResultado"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="@string/resultado"
+                           android:textColor="@color/black"
+                           android:gravity="left"
+                           android:textStyle="bold"/>
+                   </LinearLayout>
+           </LinearLayout>
+       </LinearLayout>
+    </LinearLayout>

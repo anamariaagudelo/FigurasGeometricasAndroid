@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">"Figuras Geometricas "</string>
+    <string name="lado">Ingresar Lado</string>
+    <string name="ladoCuadrado">Ingresar Lado</string>
+    <string name="ladoCirculo">Ingresar Radio</string>
+    <string name="ladoTriangulo">Ingresar Lado</string>
+    <string name="ladoCubo">Ingresar Lado</string>
+    <string name="calcular">Calcular</string>
+    <string name="resultado">Resultado</string>
+    <string name="cuadrado">Cuadrado</string>
+    <string name="circulo">Circulo</string>
+    <string name="triangulo">Triangulo Equilatero</string>
+    <string name="cubo">Cubo Perfecto</string>
+</resources>
